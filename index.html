@@ -149,10 +149,7 @@
       >
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            # Currently Working as Consultant - UI Developer @UST GLOBAL From
-            Aug 2022 - Present
-          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5"></div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Senior Software Engineer</h3>
@@ -168,7 +165,7 @@
               <div class="subheading mb-3">UST Global</div>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">Sep 2022 - Aug 2023</span>
+              <span class="text-primary">Aug 2022 - Aug 2023</span>
             </div>
           </div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -358,22 +355,12 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
     <script>
-      // Current date
       const currentDate = new Date();
-
-      // Specific date (March 2015)
       const specificDate = new Date(2015, 2); // Month is 0-based, so 2 represents March
-
-      // Calculate the difference in years
       const yearDifference =
         currentDate.getFullYear() - specificDate.getFullYear();
-
-      console.log(`Difference in years: ${yearDifference}`);
-
-	  var yrElement = document.getElementById("yr");
-
-    // Set the content using the textContent property
-    yrElement.textContent = "8+";
+      var yrElement = document.getElementById("yr");
+      yrElement.textContent = `${yearDifference}+`;
     </script>
   </body>
 </html>
